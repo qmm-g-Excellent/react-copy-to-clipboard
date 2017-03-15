@@ -1,0 +1,41 @@
+.copy{
+  width:400px;
+  top:200px;
+}
+
+.copy-btn{
+  cursor: pointer;
+}
+
+
+.popupText {
+  display: none;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popupText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.show {
+  display: inline;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
